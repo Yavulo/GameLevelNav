@@ -19,7 +19,7 @@ public class InventorySystem : MonoBehaviour
             g_slots.Add(slotGraphic.GetComponent<InvSlotUi>());
             if (slotGraphic.GetComponent<InvSlotUi>().g_item == null)// New
             {
-                slotGraphic.gameObject.SetActive(false);       
+                slotGraphic.gameObject.SetActive(false);
             }
         }
 
@@ -52,7 +52,7 @@ public class InventorySystem : MonoBehaviour
     }
 
     // THIS FUNCTION SEARCHES THROUGH THE INVENTORY LOOKING FOR ITEMS OF A TYPE - IT RETURNS AN INDEX OF THE LAST ONE FOUND
-    public int IdentifySlotFromItemType(InventoryItem name) 
+    public int IdentifySlotFromItemType(InventoryItem name)
     {
         int slotIndex = 0;
         int foundAtIndex = -1;

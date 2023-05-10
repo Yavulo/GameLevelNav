@@ -80,7 +80,7 @@ public class BasicInteract : MonoBehaviour
             playerInventory.RemoveItem(itemToDiscard);
 
         }
-        
+
         if (carriedItem != null) // IF YOU ARE CARRYING SOMETHING, CHECKS FOR AN INPUT TO DROP IT.
         {
             if (Input.GetKeyUp(dropKey))
