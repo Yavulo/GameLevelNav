@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08552e26674556a4d9b45965d91bda75, type: 3}
   m_Name: MonkeyHead
   m_EditorClassIdentifier: 
-  g_name: Enter Item Name...
-  g_sprite: {fileID: 0}
+  g_name: Monkey Head
+  g_sprite: {fileID: 21300000, guid: 106ef12c6c8372643999185ebc600a33, type: 3}

@@ -14,6 +14,7 @@ TagManager:
   - CheckPoint
   - GameManager
   - Collectable
+  - Carryable
   layers:
   - Default
   - TransparentFX
@@ -29,7 +30,7 @@ TagManager:
   - Environment
   - Light
   - PostProcess
-  - 
+  - Carriable
   - 
   - 
   - 

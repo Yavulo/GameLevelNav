@@ -68,7 +68,7 @@ public class BasicInteract : MonoBehaviour
         }
         rayHit = false;
         canInteract = false;
-        CrosshairDot = GameObject.Find("CrosshairDot").GetComponent<Image>();
+        //CrosshairDot = GameObject.Find("CrosshairDot").GetComponent<Image>();
         carriedItem = null;
     }
 
@@ -142,7 +142,7 @@ public class BasicInteract : MonoBehaviour
             targetIsCarryable = false;
             targetIsCollctable = false;
             targetIsInteractive = false;
-            collectPromptTxt.enabled = false;
+            //collectPromptTxt.enabled = false;
             intPromptTxt.enabled = false;
             if (carriedItem == null)
             {
@@ -215,9 +215,9 @@ public class BasicInteract : MonoBehaviour
     void DropObject()
     {
         d_ray = Camera.main.ScreenPointToRay(Input.mousePosition); // Raycast From Mouse Position 
-        if (Physics.Raycast(d_ray, out dropHitObject, 1.13f, dropLayerToHit)) // RAYCAST IS HARD CODED - Change to match your Z distance on carryPoint
+        if (Physics.Raycast(d_ray, out dropHitObject, 0.9f, dropLayerToHit)) // RAYCAST IS HARD CODED - Change to match your Z distance on carryPoint
         {
-            Debug.Log("Can't drop atm");
+            Debug.Log("Can't drop atm. Hitting: " + dropHitObject.transform.gameObject);
         }
         else
         {
